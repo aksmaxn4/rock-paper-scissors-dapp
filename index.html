@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"
+        type="application/javascript"></script>
+    <script src = "script.js"></script>
+    <title>Rock-Paper-Scissors Dapp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          Rock Paper Scissors Game
+        </div>
+        <p class="rules">This is a classic RPS game. Enter bet and click on a button to start playing!🪄</p>
+        <div class="options">
+          <button class="option rock" onclick=startGame(0)>
+            &#9994;<br/>Rock
+          </button>
+          <button class="option paper" onclick=startGame(1)>
+            &#9995;<br/>Paper
+          </button>
+          <button class="option scissors" onclick=startGame(2)>
+            &#9996;<br/>Scissors
+          </button>
+        </div>  
+        <div class="bet-input">
+            <label for="bet-ammount">Input your bet in BNB</label><br>
+            <input type="number" min="0" id="bet-ammount"></input>
+        </div>
+        <div class="game-log">
+            <span id="game-result"></span>
+        </div>
+      </div>
+</body>
+</html>

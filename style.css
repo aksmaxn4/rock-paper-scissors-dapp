@@ -1,0 +1,54 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+.header{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.2cm 0 0.3cm 0;
+}
+.rules{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+}
+.option{
+    width: 220px;
+    height: 220px;
+    font-size: 3rem;
+}
+.bet-input{
+    text-align: center;
+    margin: 1cm;
+}
+
+.bet-input label{
+    font-size: 1.75rem;
+}
+
+.game-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin-top: 1cm;
+}
